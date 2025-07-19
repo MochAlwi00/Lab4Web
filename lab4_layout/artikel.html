@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* CSS tambahan untuk halaman Artikel */
+      .article-header {
+        margin-bottom: 20px;
+      }
+
+      .article-header h2 {
+        color: #428bca;
+        margin-bottom: 10px;
+      }
+
+      .article-meta {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      .article-meta span {
+        margin-right: 15px;
+      }
+
+      .article-content {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .article-content p {
+        margin-bottom: 15px;
+      }
+
+      .article-content h3 {
+        color: #333;
+        margin: 25px 0 15px;
+      }
+
+      .article-content img {
+        max-width: 100%;
+        height: auto;
+        margin: 15px 0;
+        border-radius: 5px;
+      }
+
+      .article-content .img-left {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        max-width: 350px;
+      }
+
+      .article-content .img-right {
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        max-width: 350px;
+      }
+
+      .article-content blockquote {
+        border-left: 5px solid #428bca;
+        padding: 10px 20px;
+        margin: 20px 0;
+        background-color: #f9f9f9;
+        font-style: italic;
+      }
+
+      .article-tags {
+        margin: 30px 0;
+      }
+
+      .article-tags span {
+        display: inline-block;
+        background-color: #f0f0f0;
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-radius: 3px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .article-comments {
+        margin-top: 40px;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+      }
+
+      .comment {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .comment-author {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .comment-date {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .comment-content {
+        line-height: 1.5;
+      }
+
+      .comment-form {
+        margin-top: 30px;
+      }
+
+      .comment-form h3 {
+        margin-bottom: 15px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+      }
+
+      textarea.form-control {
+        height: 150px;
+        resize: vertical;
+      }
+
+      .btn-submit {
+        background-color: #428bca;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .btn-submit:hover {
+        background-color: #2b83ea;
+      }
+
+      .related-articles {
+        margin-top: 40px;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+      }
+
+      .related-articles h3 {
+        margin-bottom: 15px;
+      }
+
+      .related-articles ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .related-articles li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .related-articles li a {
+        color: #428bca;
+        text-decoration: none;
+      }
+
+      .related-articles li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html" class="active">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <section id="wrapper">
+        <section id="main">
+          <article class="article-content">
+            <div class="article-header">
+              <h2>HTML5: Kerangka Dasar Pengembangan Web Modern</h2>
+              <div class="article-meta">
+                <span><i>📅</i> Dipublikasikan: 20 Oktober 2023</span>
+                <span><i>👤</i> Penulis: Moch.Alwi</span>
+                <span><i>🏷️</i> Kategori: Web Development</span>
+              </div>
+            </div>
+
+            <img src="https://dummyimage.com/600x300/428bca/ffffff" alt="HTML5 Logo" class="img-left" />
+
+            <p>
+              HTML5 adalah versi terbaru dari HTML (Hypertext Markup Language), bahasa markup standar untuk membuat halaman web. HTML5 memperkenalkan banyak fitur baru yang memungkinkan pengembang untuk membuat aplikasi web yang lebih kaya
+              dan interaktif tanpa bergantung pada plugin seperti Flash.
+            </p>
+
+            <p>
+              Salah satu perubahan paling signifikan dalam HTML5 adalah pengenalan elemen semantik baru yang membantu mendefinisikan struktur halaman web dengan lebih baik. Elemen-elemen ini termasuk <code>&lt;header&gt;</code>,
+              <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, dan <code>&lt;footer&gt;</code>.
+            </p>
+
+            <h3>Elemen Semantik dalam HTML5</h3>
+
+            <p>Elemen semantik adalah elemen yang dengan jelas menggambarkan maknanya untuk browser dan pengembang. Berikut adalah beberapa elemen semantik utama dalam HTML5:</p>
+
+            <ul>
+              <li><strong>&lt;header&gt;</strong> - Mendefinisikan header untuk dokumen atau bagian</li>
+              <li><strong>&lt;nav&gt;</strong> - Mendefinisikan satu set link navigasi</li>
+              <li><strong>&lt;section&gt;</strong> - Mendefinisikan bagian dalam dokumen</li>
+              <li><strong>&lt;article&gt;</strong> - Mendefinisikan konten artikel</li>
+              <li><strong>&lt;aside&gt;</strong> - Mendefinisikan konten selain dari konten utama (seperti sidebar)</li>
+              <li><strong>&lt;footer&gt;</strong> - Mendefinisikan footer untuk dokumen atau bagian</li>
+            </ul>
+
+            <p>Penggunaan elemen semantik ini membantu mesin pencari dan teknologi assistive seperti screen reader untuk lebih memahami struktur dan konten halaman web.</p>
+
+            <h3>Fitur Baru dalam HTML5</h3>
+
+            <p>Selain elemen semantik, HTML5 juga memperkenalkan banyak fitur baru yang memperkaya pengalaman web:</p>
+
+            <img src="https://dummyimage.com/300x200/71e6d4/000000" alt="HTML5 Features" class="img-right" />
+
+            <ol>
+              <li><strong>Canvas</strong> - Elemen untuk menggambar grafis menggunakan JavaScript</li>
+              <li><strong>Video dan Audio</strong> - Dukungan native untuk multimedia tanpa plugin</li>
+              <li><strong>Geolocation</strong> - API untuk mendapatkan lokasi geografis pengguna</li>
+              <li><strong>Local Storage</strong> - Penyimpanan data di sisi klien yang lebih baik dari cookies</li>
+              <li><strong>Web Workers</strong> - JavaScript yang berjalan di background tanpa mengganggu UI</li>
+              <li><strong>Drag and Drop</strong> - Fitur drag and drop native</li>
+            </ol>
+
+            <blockquote>"HTML5 bukan hanya tentang markup baru, tetapi juga tentang API JavaScript yang kuat yang memungkinkan pengembang untuk membuat aplikasi web yang lebih interaktif dan responsif."</blockquote>
+
+            <h3>Keuntungan Menggunakan HTML5</h3>
+
+            <p>Ada banyak keuntungan menggunakan HTML5 dalam pengembangan web modern:</p>
+
+            <ul>
+              <li><strong>Responsif</strong> - HTML5 dan CSS3 memungkinkan desain responsif yang bekerja di berbagai perangkat</li>
+              <li><strong>Kompatibilitas</strong> - Sebagian besar browser modern mendukung HTML5</li>
+              <li><strong>Efisiensi</strong> - Kode yang lebih bersih dan terstruktur</li>
+              <li><strong>SEO</strong> - Elemen semantik membantu mesin pencari memahami konten dengan lebih baik</li>
+              <li><strong>Offline Support</strong> - Aplikasi web dapat bekerja offline dengan Application Cache</li>
+            </ul>
+
+            <p>
+              Dengan semua fitur dan keuntungan ini, tidak mengherankan bahwa HTML5 telah menjadi standar de facto untuk pengembangan web modern. Pengembang web yang ingin tetap relevan harus memahami dan mengadopsi HTML5 dalam proyek
+              mereka.
+            </p>
+
+            <div class="article-tags">
+              <span>HTML5</span>
+              <span>Web Development</span>
+              <span>Semantic Elements</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="article-comments">
+              <h3> </h3>
+
+              </div>
+
+              <div class="comment-form">
+                <h3>Tinggalkan Komentar</h3>
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" class="form-control" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="comment">Komentar</label>
+                    <textarea id="comment" name="comment" class="form-control" required></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" class="btn-submit">Kirim Komentar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </article>
+
+          <div class="related-articles">
+            <h3>Artikel Terkait</h3>
+            <ul>
+              <li><a href="#">CSS3: Styling untuk Web Modern</a></li>
+              <li><a href="#">JavaScript ES6: Fitur-fitur Baru yang Harus Diketahui</a></li>
+              <li><a href="#">Responsive Web Design: Teknik dan Praktik Terbaik</a></li>
+              <li><a href="#">Web Accessibility: Membuat Web untuk Semua Orang</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <aside id="sidebar">
+          <div class="widget-box">
+            <h3 class="title">Kategori</h3>
+            <ul>
+              <li><a href="#">HTML & CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">PHP & MySQL</a></li>
+              <li><a href="#">React & Vue</a></li>
+              <li><a href="#">Mobile Development</a></li>
+            </ul>
+          </div>
+
+          <div class="widget-box">
+            <h3 class="title">Artikel Populer</h3>
+            <ul>
+              <li><a href="#">10 Trik CSS yang Jarang Diketahui</a></li>
+              <li><a href="#">Cara Mengoptimalkan Performa Website</a></li>
+              <li><a href="#">Belajar JavaScript dari Dasar</a></li>
+              <li><a href="#">Membuat Aplikasi Web dengan React</a></li>
+              <li><a href="#">Tips SEO untuk Developer</a></li>
+            </ul>
+          </div>
+
+          <div class="widget-box">
+            <h3 class="title">Tentang Penulis</h3>
+            <div style="text-align: center; margin-bottom: 10px">
+              <img src="https://dummyimage.com/100x100/428bca/ffffff" alt="Author" style="border-radius: 50%" />
+            </div>
+            <p>John Doe adalah seorang web developer dengan pengalaman lebih dari 5 tahun di bidang pengembangan web. Dia spesialis dalam HTML, CSS, dan JavaScript.</p>
+          </div>
+
+          <div class="widget-box">
+            <h3 class="title">Berlangganan</h3>
+            <p>Dapatkan artikel terbaru langsung ke email Anda.</p>
+            <form action="#" method="post" style="padding: 15px">
+              <div class="form-group">
+                <input type="email" name="subscribe-email" class="form-control" placeholder="Email Anda" required />
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn-submit" style="width: 100%">Berlangganan</button>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </section>
+      <footer>
+        <p>&copy; 2023 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
